@@ -4,6 +4,9 @@
 
 ## Overview
 This is a full-stack blogging website built using React for the frontend and Appwrite as the backend as a service (BaaS). The platform allows users to create, edit, delete, and read blog posts.
+![Screenshot 2025-02-28 103726](https://github.com/user-attachments/assets/124e01a0-3580-423c-ab00-deb90a627d6f)
+
+
 
 ## Features
 - User authentication (Signup/Login/Logout)
@@ -28,12 +31,15 @@ This is a full-stack blogging website built using React for the frontend and App
 ### Prerequisites
 - Node.js and npm installed
 - Appwrite instance set up
+- react-hook-form installed
+- tinyMce Editor installed
+- HTML parser installed
 
 ### Steps
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/blogging-website.git
-   cd blogging-website
+   git clone https://github.com/akjnv119/BlogProject.git
+   cd BlogProject
    ```
 
 2. **Install Dependencies**
@@ -44,18 +50,18 @@ This is a full-stack blogging website built using React for the frontend and App
 3. **Set Up Environment Variables**
    Create a `.env` file in the root directory and add your Appwrite credentials:
    ```env
-   REACT_APP_APPWRITE_ENDPOINT=your_appwrite_endpoint
-   REACT_APP_PROJECT_ID=your_appwrite_project_id
-   REACT_APP_DATABASE_ID=your_appwrite_database_id
-   REACT_APP_COLLECTION_ID=your_appwrite_collection_id
-   REACT_APP_BUCKET_ID=your_appwrite_bucket_id
+   VITE_APPWRITE_URL=your_appwrite_URL
+   VITE_PROJECT_ID=your_appwrite_project_id
+   VITE_DATABASE_ID=your_appwrite_database_id
+   VITE_COLLECTION_ID=your_appwrite_collection_id
+   VITE_BUCKET_ID=your_appwrite_bucket_id
    ```
 
 4. **Start the Development Server**
    ```bash
    npm start
    ```
-   The project will be available at `http://localhost:3000/`
+   The project will be available at `http://localhost:5174/`
 
 ## Deployment
 To deploy the project, you can use services like Vercel, Netlify, or Firebase for the frontend. Make sure to configure the environment variables in the respective hosting platforms.
